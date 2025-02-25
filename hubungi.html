@@ -7,5 +7,34 @@
 </head>
 <body>
     <h1>Hubungi Kami</h1>
+
+    <form action="proses.php" method="post">
+        Nama Lengkap <br>
+        <input type="text" name="nama" id="nama" 
+        required> <br>
+        <p></p>
+        Tanggal Lahir <br>
+        <input type="date" name="tanggallahir" id="tanggallahir"> <br>
+        <p></p>
+        Jenis Kelamin <br>
+        <input type="radio" name="jk" id="jkl" 
+        value="L" checked > Laki-laki <br>
+        <input type="radio" name="jk" id="jkp" 
+        value="P" checked > Perempuan <br> 
+        <p></p>
+        Tempat Lahir <br>
+        <select name="tempatlahir" id="tempatlahir">
+            <option value="PLB">Palembang</option>
+            <option value="JKT">Jakarta</option>
+            <option value="JT">Jawa Tengah</option>
+            <option value="DIY">Daerah Istimewah Yogyakarta</option>
+            <option value="BK">Bangka Belitung</option>
+        </select><br>
+        <p></p>
+        Pesan <br>
+        <textarea name="pesan" id="pesan"></textarea>
+        <br>
+        <button type="submit">Kirim</button>
+    </form>
 </body>
 </html>
