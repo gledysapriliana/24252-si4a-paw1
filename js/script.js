@@ -37,7 +37,7 @@ fetch("https://dummyjson.com/quotes")
     quotesContainer.innerHTML = "";
 
     data.quotes.forEach( (q) => { 
-    document.getElementById('quotes').innerHTML += `
+        quotesContainer.innerHTML += `
     <div class = "col-lg-4 col-md-6 col-sm-12 mt-4">
         <div class = "card h-100 shadow-sm">
             <div class = "card-body">
